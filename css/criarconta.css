@@ -1,0 +1,184 @@
+/*REGISTRAR CONTA*/
+
+body{
+    margin:0;
+    background-color: #0240D4;
+    overflow: hidden;
+}
+
+#submit{
+    position:relative;
+    left:26%;
+    border-radius: 20px;
+    outline:none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: none;
+    top: 80px;
+    height: 80px;
+    width: 200px;
+    font-size: xx-large;
+    border:none;
+    text-shadow:5px 5px 10px black;
+    color:white;
+}
+#submit:hover{
+    animation: submit 1s ease 0s infinite normal forwards;
+}
+
+@keyframes submit {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+legend{
+    color: rgb(255, 255, 255);
+    position: relative;
+    left:33%;
+    transform: translateX(-15%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    text-shadow: 0px 0px 16px #000000;
+}
+
+.box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 52.4%;
+    font-size: larger;
+    border-radius: 0px;
+    background-image: linear-gradient(rgb(55, 55, 248),dodgerblue);
+    border-width: 5px;
+    border:none;
+    box-shadow: 0px 0px 10px 10px #02157e;
+    border-radius: 10px;
+    /*color: dodgerblue;*/
+ }
+
+a{
+    position: relative;
+    top:625px;
+    left:51.2%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+}
+
+a:hover{
+    color:rgb(206, 208, 219);
+} 
+
+
+h4{
+    position: relative;
+    top:672px;
+    left:43.2%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);font-size: large;
+}
+
+.inputuser{
+    position:relative;
+    top:119px;
+    letter-spacing: 1.8px;
+    color:rgb(0, 0, 0);
+    border: rgb(0, 0, 0);
+    left: 6%;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgb(49, 46, 46);
+    font-size: larger;
+}
+
+.inputbox{
+    position: relative;
+    top: -60px;
+    
+}
+
+.ani{
+    position: absolute;
+    top: 122px;
+    left: 30px;
+    pointer-events:none;
+    transition: 0.6s;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    transition: 0.5s;
+    font-family: Courier New, monospace;
+    text-shadow:5px 5px 10px black;
+}
+
+.inputuser:focus ~ .ani, .inputuser:valid ~ .ani{
+    top:90px;
+    color:rgb(255, 255, 255);
+}
+
+/* RESPONSIVO PC*/
+
+@media (max-width:1400px){
+    legend{
+        left:25%;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    .inputbox{
+        top:-100px;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    .ani{
+        left:5.5%;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    #submit{
+        left:15%;
+        top:-5px;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    .box{
+        height: 380px;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    h4{
+        top:460px;
+        left:40%;
+   }
+}
+
+/**/
+
+@media (max-width:1400px){
+    a{
+        top:414px;
+   }
+}
